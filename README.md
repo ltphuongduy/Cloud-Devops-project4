@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/DanhTPT97/Cloud-Devops-project4.svg?style=svg)](https://app.circleci.com/pipelines/github/DanhTPT97)
+[![Circle-ci-status](https://circleci.com/gh/ltphuongduy/Cloud-Devops-project4.svg?style=svg)](https://app.circleci.com/pipelines/github/ltphuongduy/Cloud-Devops-project4)
 
 ## Project Overview
 
@@ -25,9 +25,9 @@ Things have been done in this project:
 
 ```bash
 # Python 3.7 should be available on local. 
-python3 -m pip install
-python3 -m venv localEnv
-source localEnv/Scripts/activate
+py -m pip install
+py -m venv myEnv
+source myEnv/Scripts/activate
 ```
 * Run `make install` to install the necessary dependencies
 
@@ -43,7 +43,5 @@ source localEnv/Scripts/activate
 
 * Setup and Configure Kubernetes locally: change kubectl environment to point to docker-destop context
     - `kubectl config use-context docker-desktop`
-* Create Flask app in Container on local: 
-    - `./run_docker.sh`
 * Run via kubectl
     - `./run_kubernetes.sh`
